@@ -1,25 +1,15 @@
-Package: care
-Version: 1.1.10
-Date: 2017-03-29
-Title: High-Dimensional Regression and CAR Score Variable Selection
-Author: Verena Zuber and Korbinian Strimmer.
-Maintainer: Korbinian Strimmer <strimmerlab@gmail.com>
-Depends: R (>= 3.0.2), corpcor (>= 1.6.8)
-Imports: stats
-Suggests: crossval
-Description: Implements the regression approach 
-  of Zuber and Strimmer (2011) "High-dimensional regression and variable 
-  selection using CAR scores" SAGMB 10: 34, <DOI:10.2202/1544-6115.1730>.
-  CAR scores measure the correlation between the response and the 
-  Mahalanobis-decorrelated  predictors.  The squared CAR score is a 
-  natural measure of variable importance and provides a canonical 
-  ordering of variables. This package provides functions for estimating 
-  CAR scores, for variable selection using CAR scores, and for estimating 
-  corresponding regression coefficients. Both shrinkage as well as 
-  empirical estimators are available.
-License: GPL (>= 3)
-URL: http://strimmerlab.org/software/care/
-Packaged: 2017-03-29 16:31:16 UTC; strimmer
-NeedsCompilation: no
+Package: caroline
+Version: 0.1-1
+Date: 2009-09-06
+Title: Generic Functions for R
+Author: David M. Schruth <dschruth@u.washington.edu>
+Maintainer: David M. Schruth <dschruth@u.washington.edu>
+Depends: R (>= 1.8.0)
+Suggests:
+Description: The caroline package is a collection of functions useful
+        for various general situations.
+License: GPL (>= 2)
+URL: http://www.r-project.org, http://www.another.url
+Packaged: Sun Sep 6 15:37:36 2009; dave
 Repository: CRAN
-Date/Publication: 2017-03-29 17:43:14 UTC
+Date/Publication: 2009-09-07 09:37:39
