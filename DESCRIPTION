@@ -1,24 +1,18 @@
-Package: abbyyR
-Title: Access to Abbyy Optical Character Recognition (OCR) API
-Version: 0.5.4
-Authors@R: person("Gaurav", "Sood", email = "gsood07@gmail.com", role = c("aut", "cre"))
-Maintainer: Gaurav Sood <gsood07@gmail.com>
-Description: Get text from images of text using Abbyy Cloud Optical Character
-    Recognition (OCR) API. Easily OCR images, barcodes, forms, documents with
-    machine readable zones, e.g. passports. Get the results in a variety of formats
-    including plain text and XML. To learn more about the Abbyy OCR API, see 
-    <http://ocrsdk.com/>.
-URL: http://github.com/soodoku/abbyyR
-BugReports: http://github.com/soodoku/abbyyR/issues
-Depends: R (>= 3.2.0)
-License: MIT + file LICENSE
-LazyData: true
-VignetteBuilder: knitr
-Imports: httr, XML, curl, readr, plyr, progress
-Suggests: testthat, rmarkdown, knitr (>= 1.11), lintr
-RoxygenNote: 6.0.1.9000
+Package: abind
+Version: 1.4-5
+Date: 2016-06-19
+Title: Combine Multidimensional Arrays
+Author: Tony Plate <tplate@acm.org> and Richard Heiberger
+Maintainer: Tony Plate <tplate@acm.org>
+Description: Combine multidimensional arrays into a single array.
+  This is a generalization of 'cbind' and 'rbind'.  Works with
+  vectors, matrices, and higher-dimensional arrays.  Also
+  provides functions 'adrop', 'asub', and 'afill' for manipulating,
+  extracting and replacing data in arrays.
+Depends: R (>= 1.5.0)
+Imports: methods, utils
+License: LGPL (>= 2)
 NeedsCompilation: no
-Packaged: 2018-05-30 12:47:37 UTC; soodoku
-Author: Gaurav Sood [aut, cre]
+Packaged: 2016-07-19 15:24:25 UTC; tap
 Repository: CRAN
-Date/Publication: 2018-05-30 13:20:41 UTC
+Date/Publication: 2016-07-21 19:18:05
