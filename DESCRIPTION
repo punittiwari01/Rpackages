@@ -1,32 +1,25 @@
-Package: BSL
-Type: Package
-Title: Bayesian Synthetic Likelihood with Graphical Lasso
-Version: 0.1.1
-Date: 2018-03-23
-Authors@R: c(person("Ziwen","An",role=c("aut","cre"),email="ziwen.an@hdr.qut.edu.au",comment = c(ORCID = "0000-0002-9947-5182")),
-            person("Christopher C.","Drovandi",role=c("ctb"),email="c.drovandi@qut.edu.au",comment = c(ORCID = "0000-0001-9222-8763")),
-            person("Leah F.","South",role=c("ctb"),email="leah.south@hdr.qut.edu.au",comment = c(ORCID = "0000-0002-5646-2963")))
-Description: Bayesian synthetic likelihood (BSL, Price et al. (2018) <doi:10.1080/10618600.2017.1302882>)
- is an alternative to standard, non-parametric approximate Bayesian computation (ABC). BSL assumes a
- multivariate normal distribution for the summary statistic likelihood and it is suitable when
- the distribution of the model summary statistics is sufficiently regular. This package provides
- a Metropolis Hastings Markov chain Monte Carlo implementation of BSL and
- BSL with graphical lasso (BSLasso, An et al. (2018) <https://eprints.qut.edu.au/102263/>),
- which is computationally more efficient when the dimension of the summary statistic is high.
- Extensions to this package are planned.
-License: GPL (>= 2)
-LazyLoad: yes
-Imports: glasso, ggplot2, stats, MASS, cvTools, grid, gridExtra,
-        foreach, coda, utils
-Suggests: elliplot
-LinkingTo: Rcpp, RcppArmadillo
-LazyData: true
-RoxygenNote: 6.0.1
-NeedsCompilation: yes
-Packaged: 2018-03-23 02:39:35 UTC; n8001626
-Author: Ziwen An [aut, cre] (<https://orcid.org/0000-0002-9947-5182>),
-  Christopher C. Drovandi [ctb] (<https://orcid.org/0000-0001-9222-8763>),
-  Leah F. South [ctb] (<https://orcid.org/0000-0002-5646-2963>)
-Maintainer: Ziwen An <ziwen.an@hdr.qut.edu.au>
+Package: care
+Version: 1.1.10
+Date: 2017-03-29
+Title: High-Dimensional Regression and CAR Score Variable Selection
+Author: Verena Zuber and Korbinian Strimmer.
+Maintainer: Korbinian Strimmer <strimmerlab@gmail.com>
+Depends: R (>= 3.0.2), corpcor (>= 1.6.8)
+Imports: stats
+Suggests: crossval
+Description: Implements the regression approach 
+  of Zuber and Strimmer (2011) "High-dimensional regression and variable 
+  selection using CAR scores" SAGMB 10: 34, <DOI:10.2202/1544-6115.1730>.
+  CAR scores measure the correlation between the response and the 
+  Mahalanobis-decorrelated  predictors.  The squared CAR score is a 
+  natural measure of variable importance and provides a canonical 
+  ordering of variables. This package provides functions for estimating 
+  CAR scores, for variable selection using CAR scores, and for estimating 
+  corresponding regression coefficients. Both shrinkage as well as 
+  empirical estimators are available.
+License: GPL (>= 3)
+URL: http://strimmerlab.org/software/care/
+Packaged: 2017-03-29 16:31:16 UTC; strimmer
+NeedsCompilation: no
 Repository: CRAN
-Date/Publication: 2018-03-23 14:14:53 UTC
+Date/Publication: 2017-03-29 17:43:14 UTC
